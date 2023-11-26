@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@300&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+:root {
+    --body-bg-color: rgb(237, 237, 237);
+    --color-black: black;
+    --bg-color: white;
+
+    --container-bg-color: white;
+    --container-box-shadow-color: rgb(200, 200, 200);
+
+    --nav-bg-color: rgb(240, 240, 240);
+    --nav-in-top-part-bottom-border-color: rgb(11, 197, 126);
+    --nav-in-middle-part-bottom-border-color: white;
+    --nev-bar-third-row-box-shadow-color: white;
+
+    --nav-in-top-part-color: rgb(118, 249, 66);
+    --nav-in-middle-or-bottom-part-color: white;
+    --nav-in-middle-part-bg-color: green;
+    --nav-in-bottom-part-bg-color: rgb(20, 164, 0);
+    --nav-in-bottom-part-hover-color: rgb(0, 217, 87);
+
+    --table-white-color-border: white;
+    --table-border-color: rgb(85, 85, 85);
+    --table-body-bg-color: white;
+    --grade-sheet-table-header-bg-color: rgb(196, 196, 196);
+    --table-row-bg-color: rgb(240, 240, 240);
+    --grade-sheet-bg-light-gray: rgb(222, 222, 222);
+
+    --search-again-hover-color: red;
+
+    --footer-top-border-color: rgb(43, 210, 43);
+    --footer-bg-colo: rgb(243, 243, 243);
+    --footer-text-color: rgb(85, 85, 85);
+
+    --input-select-button-bg-color: rgb(241, 238, 238);
+    --input-select-button-border-color: rgb(85, 85, 85);
+    --input-select-button-text-color: rgb(65, 65, 65);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background: var(--body-bg-color);
+    width: 100vw;
+    padding: 10px;
+}
+
+/* ===Container style=== */
+.container {
+    margin: auto;
+    max-width: 700px;
+    background: var(--container-bg-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container>table {
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+/* ==upper case all text== */
+.text-upper-case {
+    text-transform: uppercase;
+}
+
+/* ===Table Head style=== */
+.container>table>thead {
+    background: var(--nav-bg-color);
+    border-radius: 5px;
+    border-spacing: 0;
+}
+
+table>thead>.first-row>.logo-container {
+    border-radius: 5px 0 0 0;
+    text-align: center;
+    width: 20%;
+}
+
+table>thead>.first-row>.logo-container>img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+
+/* ==Head part First row style== */
+table>thead>.first-row>th {
+    color: var(--nav-in-top-part-color);
+    background: url('banner_flag.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid var(--nav-in-top-part-bottom-border-color);
+    border-radius: 0 5px 0 0;
+    font-size: 1rem;
+    padding: 10px 10px 0px 5px;
+    text-align: left;
+    width: 80%;
+}
+
+
+/* ==Head part Second row style== */
+table>thead>.second-row>th {
+    background: var(--nav-in-middle-part-bg-color);
+    color: var(--nav-in-middle-or-bottom-part-color);
+    padding: 5px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--nav-in-middle-part-bottom-border-color);
+    width: 80%;
+}
+
+
+/* ==Head part Third row== */
+table>thead>.third-row>td {
+    background: var(--nav-in-bottom-part-bg-color);
+    color: var(--nav-in-middle-or-bottom-part-color);
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 5px 5px 2px 5px;
+    box-shadow: inset 1px 1px 10px 1px var(--nev-bar-third-row-box-shadow-color);
+    width: 80%;
+}
+
+table>thead>.third-row>td:hover {
+    color: var(--nav-in-bottom-part-hover-color);
+    cursor: pointer;
+}
+
+/* ===Table body style==== */
+tbody {
+    background: var(--table-row-bg-color);
+}
+
+table>tbody>.exam-result-header-row>th {
+    background: var(--bg-color);
+    color: var(--color-black);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+tbody>.exam-result-rows>td,
+th {
+    border: 1px solid var(--table-white-color-border);
+    font-size: .8rem;
+    text-align: left;
+    padding: 5px;
+}
+
+tbody>.exam-result-rows>#roll-no {
+    width: 15%;
+}
+
+tbody>.exam-result-rows>#roll-in-roll {
+    width: 25%;
+}
+
+tbody>.exam-result-rows>#name {
+    width: 20%;
+}
+
+tbody>.exam-result-rows>#name-in-name {
+    width: 40%;
+}
+
+/* ===Grade sheet=== */
+table>tbody>#grade-sheet-row-1>th {
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--color-black);
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+tbody>#grade-sheet-row-2>th {
+    background: var(--grade-sheet-table-header-bg-color);
+    color: var(--color-black);
+    padding: 5px;
+    text-align: left;
+    font-size: .8rem;
+}
+
+
+tbody>.grade-sheet-rows>td {
+    border: 1px solid var(--table-white-color-border);
+    padding: 5px;
+    text-align: left;
+    font-size: .8rem;
+}
+
+tbody>#grade-sheet-row-2>#co-de {
+    max-width: 10%;
+}
+
+tbody>#grade-sheet-row-2>#sub-ject {
+    max-width: 80%;
+}
+
+tbody>#grade-sheet-row-2>#co-de {
+    max-width: 10%;
+}
+
+tbody>.grade-sheet-bg-light-gray {
+    background: var(--grade-sheet-bg-light-gray);
+}
+
+
+/* ===Search again grade sheet bottom part style */
+tbody>#grade-sheet-bottom-row>th {
+    font-size: .8rem;
+    padding: 10px;
+    background: var(--bg-color);
+    text-align: center;
+    width: 100%;
+}
+
+tbody>#grade-sheet-bottom-row>th>a {
+    text-decoration: none;
+}
+
+tbody>#grade-sheet-bottom-row>th>a:hover {
+    color: var(--search-again-hover-color);
+}
+
+/* ===Table footer style=== */
+table>tfoot {
+    background: var(--nav-bg-color);
+}
+
+tfoot>tr>td {
+    border-top: 5px solid var(--footer-top-border-color);
+    padding: 15px 20px 15px 5px;
+    color: var(--footer-text-color);
+    width: 100%;
+}
+
+tfoot>tr>td>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+
+}
+
+tfoot>tr>td>ul>li {
+    list-style: none;
+}
+
+tfoot>tr>td>ul>.by-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+tfoot>tr>td>ul>.by-logo-container>img {
+    max-height: 45px;
+    max-width: 85px;
+    border-radius: 5px;
+}

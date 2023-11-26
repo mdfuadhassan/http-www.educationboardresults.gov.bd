@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@300&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+:root {
+    --body-bg-color: rgb(237, 237, 237);
+
+    --container-bg-color: white;
+    --container-box-shadow-color: rgb(200, 200, 200);
+
+    --nav-bg-color: rgb(243, 243, 243);
+    --nav-in-top-part-bottom-border-color: rgb(11, 197, 126);
+    --nav-in-middle-part-bottom-border-color: white;
+    --nev-bar-third-row-box-shadow-color: white;
+
+    --nav-in-top-part-color: rgb(118, 249, 66);
+    --nav-in-middle-or-bottom-part-color: white;
+    --nav-in-middle-part-bg-color: green;
+    --nav-in-bottom-part-bg-color: rgb(20, 164, 0);
+
+    --table-border-color: rgb(85, 85, 85);
+    --table-body-bg-color: white;
+
+    --footer-top-border-color: rgb(43, 210, 43);
+    --footer-bg-colo: rgb(243, 243, 243);
+    --footer-text-color: rgb(85, 85, 85);
+
+    --input-select-button-bg-color: rgb(241, 238, 238);
+    --input-select-button-border-color: rgb(85, 85, 85);
+    --input-select-button-text-color: rgb(65, 65, 65);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--body-bg-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Container style */
+.container {
+    max-width: 700px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px var(--container-box-shadow-color);
+    padding: 10px;
+    background: var(--container-bg-color);
+}
+
+table {
+    background: var(--table-body-bg-color);
+    margin: auto;
+    border-radius: 5px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+/* First row */
+thead {
+    background: var(--nav-bg-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+thead>.first-row>.logo {
+    border-radius: 5px 0 0 0;
+    text-align: center;
+
+}
+
+thead>.first-row>.logo>img {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+
+thead>tr>.min-of-edu {
+    background: url('banner_flag.jpg');
+    background-size: cover;
+    background-position: right;
+    color: var(--nav-in-top-part-color);
+    padding: 10px 10px 0px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--nav-in-top-part-bottom-border-color);
+    border-radius: 0 5px 0 0;
+}
+
+/* Second row */
+thead>.second-row>td {
+    background: var(--nav-in-middle-part-bg-color);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--nav-in-middle-or-bottom-part-color);
+    padding: 5px;
+    border-bottom: 1px solid var(--nav-in-middle-part-bottom-border-color);
+}
+
+/* Third row */
+thead>.third-row>td {
+    background: var(--nav-in-bottom-part-bg-color);
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: end;
+    padding: 5px 5px 2px 5px;
+    color: var(--nav-in-middle-or-bottom-part-color);
+    box-shadow: inset 1px 1px 10px 1px var(--nev-bar-third-row-box-shadow-color);
+}
+
+/* Table body style */
+tbody>.empty-row>.ep-dt-1 {
+    padding: 0 50px;
+}
+
+tbody>.empty-row>.ep-dt-2 {
+    padding: 10px;
+}
+
+tbody>.empty-row>.ep-dt-3 {
+    padding: 30px;
+}
+
+tbody>.empty-row>.ep-dt-4 {
+    padding: 20px;
+}
+
+tbody>.empty-row>.empty-in-top {
+    padding: 15px;
+    border-top: 1px solid var(--table-border-color);
+    border-left: 1px solid var(--table-border-color);
+    border-right: 1px solid var(--table-border-color);
+}
+
+tbody>.empty-row>.empty-in-bottom {
+    padding: 15px;
+    border-bottom: 1px solid var(--table-border-color);
+    border-left: 1px solid var(--table-border-color);
+    border-right: 1px solid var(--table-border-color);
+}
+
+.empty-left {
+    padding: 0 30px;
+    border-left: 1px solid var(--table-border-color);
+}
+
+.empty-right {
+    padding: 0 30px;
+    border-right: 1px solid var(--table-border-color);
+}
+
+
+/* Second table style */
+.second-table {
+    background: var(--table-body-bg-color);
+}
+
+.examination,
+.year,
+.board,
+.roll,
+.reg-no,
+.sum-number {
+    font-size: .8rem;
+    text-align: start;
+}
+
+.clone-eq {
+    padding: 0 20px 0 15px;
+    font-size: 1rem;
+}
+
+.select-td-container {
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.select-td-container>.select-box {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid var(--input-select-button-border-color);
+    border-radius: 5px;
+    font-size: .8rem;
+    background: var(--input-select-button-bg-color);
+    color: var(--input-select-button-text-color);
+}
+
+.input-td-container {
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.input-td-container>.input-box {
+    outline: none;
+    border: 1px solid var(--input-select-button-border-color);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .7rem;
+    background: var(--input-select-button-bg-color);
+    color: var(--input-select-button-text-color);
+}
+
+/* =============== input number sidebar hide style ==================== */
+.input-td-container>.input-box[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-td-container>.input-box::-webkit-outer-spin-button,
+.input-td-container>.input-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* =================================== */
+
+.button-container {
+    min-width: 100%;
+    height: 100%;
+    text-align: end;
+    padding: 5px 0;
+}
+
+.button-container>button {
+    padding: 4px 10px;
+    font-size: .8rem;
+    border-radius: 3px;
+    border: 1px solid var(--input-select-button-border-color);
+    margin-left: 10px;
+    color: var(--input-select-button-text-color);
+    background: var(--input-select-button-bg-color);
+    outline: none;
+}
+
+/* Table footer style*/
+tfoot {
+    background: var(--footer-bg-colo);
+    color: var(--footer-text-color);
+}
+
+tfoot>.footer-row {
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    border-top: 5px solid var(--footer-top-border-color);
+    border-radius: 0 0 5px 5px;
+}
+
+.footer-row>.footer-data {
+    font-size: .7rem;
+    padding: 10px;
+}
+
+.footer-row>.powered-by {
+    text-align: center;
+    font-size: .7rem;
+    font-weight: lighter;
+}
+
+.footer-row>.by-logo>img {
+    margin: 15px 20px 15px 0;
+    max-width: 85px;
+    max-height: 45px;
+}
